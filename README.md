@@ -26,7 +26,7 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
   - [Debugging](#Debugging)
   - [Known issues](#known-issues)
 
-## Development resources
+## Development resources 开发资源
 
 - Web: [getmonero.org](https://getmonero.org)
 - Forum: [forum.getmonero.org](https://forum.getmonero.org)
@@ -35,7 +35,7 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 - IRC: [#monero-dev on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23monero-dev&prompt=1&uio=d4)
 - It is HIGHLY recommended that you join the #monero-dev IRC channel if you are developing software that uses Monero. Due to the nature of this open source software project, joining this channel and idling is the best way to stay updated on best practices and new developments in the Monero ecosystem. All you need to do is join the IRC channel and idle to stay updated with the latest in Monero development. If you do not, you risk wasting resources on developing integrations that are not compatible with the Monero network. The Monero core team and community continuously make efforts to communicate updates, developments, and documentation via other platforms – but for the best information, you need to talk to other Monero developers, and they are on IRC. #monero-dev is about Monero development, not getting help about using Monero, or help about development of other software, including yours, unless it also pertains to Monero code itself. For these cases, checkout #monero. 
 
-## Vulnerability response
+## Vulnerability response 缺陷响应
 
 - Our [Vulnerability Response Process](https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
 - We are also available via [HackerOne](https://hackerone.com/monero)
@@ -49,12 +49,12 @@ Our researchers are available on IRC in [#monero-research-lab on Freenode](https
 - Sarang Noether, Ph.D.: [sarang@getmonero.org](mailto:sarang@getmonero.org) or [sarang.noether@protonmail.com](mailto:sarang.noether@protonmail.com); [research repository](https://github.com/SarangNoether/research-lab)
 - Surae Noether (Brandon Goodell), Ph.D.: [surae@getmonero.org](mailto:surae@getmonero.org) or [surae.noether@protonmail.com](mailto:surae.noether@protonmail.com); [research repository](https://github.com/b-g-goodell/research-lab)
 
-## Announcements
+## Announcements 声明
 
 - You can subscribe to an [announcement listserv](https://lists.getmonero.org) to get critical announcements from the Monero core team. The announcement list can be very helpful for knowing when software updates are needed.
 
-## Translations
-The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Weblate, on [translate.getmonero.org]( https://translate.getmonero.org/projects/monero/cli-wallet/). Every translation *must* be uploaded on the platform, pull requests directly editing the code in this repository will be closed. If you need help with Weblate, you can find a guide with screenshots [here](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md).
+## Translations 译文
+The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Weblate, on [translate.getmonero.org]( https://translate.getmonero.org/projects/monero/cli-wallet/) （中文未完善）. Every translation *must* be uploaded on the platform, pull requests directly editing the code in this repository will be closed. If you need help with Weblate, you can find a guide with screenshots [here](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md).
 &nbsp;
 
 If you need help/support/info about translations, contact the localization workgroup. You can find the complete list of contacts on the repository of the workgroup: [monero-translations](https://github.com/monero-ecosystem/monero-translations#contacts).
@@ -68,25 +68,33 @@ If you need help/support/info about translations, contact the localization workg
 | Coveralls | [![Coveralls Status](https://coveralls.io/repos/github/monero-project/monero/badge.svg?branch=master)](https://coveralls.io/github/monero-project/monero?branch=master)
 | License   | [![License](https://img.shields.io/badge/license-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-## Introduction
+## Introduction 介绍
 
-Monero is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
+Monero is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so. 
+Monero是一种私有的、安全的、不可追踪的、分散的数字货币。你是你的银行，你控制你的资金，没有人可以追踪你的转账，除非你允许他们这样做。
 
-**Privacy:** Monero uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain private by default.
+**Privacy:** Monero uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain private by default. 
+Monero使用密码健全的系统，允许您发送和接收资金，而无需在区块链（每个人都拥有的交易分类账）上轻松显示您的交易。这可以确保您的购买、收据和所有转账在默认情况下保持私有。
 
-**Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25-word mnemonic seed that is only displayed once and can be written down to backup the wallet. Wallet files should be encrypted with a strong passphrase to ensure they are useless if ever stolen.
+**Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25-word mnemonic seed that is only displayed once and can be written down to backup the wallet. Wallet files should be encrypted with a strong passphrase to ensure they are useless if ever stolen. 
+利用分布式对等协商网络的强大功能，网络上的每一个事务都是加密安全的。单个钱包有一个25字的记忆种子，只显示一次，可以写下来备份钱包。钱包文件应该加密一个强大的密码短语，以确保他们是无用的，如果曾经被盗。
 
-**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Monero is able to ensure that transactions are not only untraceable but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
+**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Monero is able to ensure that transactions are not only untraceable but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer. 
+通过利用环签名这一特定类型密码学的特殊属性，Monero能够确保事务不仅是不可追踪的，而且具有可选的模糊性度量，以确保事务不容易绑定到单个用户或计算机。
 
-**Decentralization:** The utility of Monero depends on its decentralised peer-to-peer consensus network - anyone should be able to run the monero software, validate the integrity of the blockchain, and participate in all aspects of the monero network using consumer-grade commodity hardware. Decentralization of the monero network is maintained by software development that minimizes the costs of running the monero software and inhibits the proliferation of specialized, non-commodity hardware.  
+**Decentralization:** The utility of Monero depends on its decentralised peer-to-peer consensus network - anyone should be able to run the monero software, validate the integrity of the blockchain, and participate in all aspects of the monero network using consumer-grade commodity hardware. Decentralization of the monero network is maintained by software development that minimizes the costs of running the monero software and inhibits the proliferation of specialized, non-commodity hardware. 
+Monero的效用取决于其分散的点对点共识网络——任何人都应该能够运行Monero软件，验证区块链的完整性，并使用消费级商品硬件参与Monero网络的各个方面。monero网络的分散化是通过软件开发来维持的，该软件开发可将运行monero软件的成本降至最低，并抑制专业化、非商品化硬件的扩散。  
 
 ## About this project
 
 This is the core implementation of Monero. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Monero that uses the protocol and network in a compatible manner.
+这是Monero的核心实现。它是开源的，完全免费使用，没有任何限制，除了下面的许可协议中指定的那些。任何人创建以兼容方式使用协议和网络的Monero替代实现都没有限制。
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
+与许多开发项目一样，Github上的存储库被认为是最新更改的“暂存”区域。在将更改合并到主存储库上的分支之前，它们将由各自分支中的单个开发人员进行测试，作为请求提交，然后由专注于测试和代码评审的贡献者进行后续测试。话虽如此，在生产环境中使用存储库之前，应该仔细考虑它，除非存储库中有一个补丁程序用于解决您遇到的某个特定节目停止问题。一般来说，使用带标签的版本来保持稳定性是一个更好的主意。
 
 **Anyone is welcome to contribute to Monero's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase, it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
+如果您有修复或代码更改，可以将其作为pull请求直接提交给“master”分支。在更改相对较小或不影响代码库的其他部分的情况下，任何一个合作者都可以立即将其合并。另一方面，如果变更特别大或复杂，则预计将在提交请求之前进行详细讨论，甚至直接讨论请求。
 
 ## Supporting the project
 
